@@ -1,15 +1,12 @@
-using UnityEngine;
+public class Occhiale : Prodotto
+{
+    public string Colore { get; set; }
 
-public class Occhiale : Prodotto{
-    public string Colore { get; private set; }
-
-    public Occhiale(string nome, float prezzo, string descrizione, string colore) 
-      //chiamata costruttore classe Prodotto
-        : base(nome, prezzo, descrizione){
+    public Occhiale(string nome, float prezzo, string descrizione, string colore) : base(nome, prezzo, descrizione, "Occhiali"){
         Colore = colore;
     }
 
-    public override void Visualizza(){
-        Debug.Log($"Occhiale: {Nome}, Prezzo: {Prezzo}, Colore: {Colore}, Descrizione: {Descrizione}");
+    public override void MostraDettagli(){
+        UnityEngine.Debug.Log($"{Nome} - {Colore} - {Prezzo}€\n{Descrizione}");
     }
 }
