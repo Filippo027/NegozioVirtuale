@@ -1,12 +1,11 @@
-public class Occhiale : Prodotto
-{
-    public string Colore { get; set; }
+public class Accessorio : Prodotto{
+    public string Materiale { get; set; }
 
-    public Occhiale(string nome, float prezzo, string descrizione, string colore) : base(nome, prezzo, descrizione, "Occhiali"){
-        Colore = colore;
+    public Accessorio(string nome, float prezzo, string descrizione, string materiale) : base(nome, prezzo, descrizione, "Accessori"){
+        Materiale = materiale;
     }
 
     public override void MostraDettagli(){
-        UnityEngine.Debug.Log($"{Nome} - {Colore} - {Prezzo}€\n{Descrizione}");
+        UnityEngine.Debug.Log($"{Nome} - {Materiale} - {Prezzo}€\n{Descrizione}");
     }
 }
