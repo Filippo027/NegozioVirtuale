@@ -15,7 +15,6 @@ Permette di:
 - **C#** (logica applicativa)  
 - **TextMeshPro** (gestione avanzata del testo)  
 - **UI Canvas / Unity UI** (menu e pannelli interattivi)  
-- **Architettura MVC-like semplice** (separazione logica e presentazione)  
 - **Git & GitHub** (versionamento del progetto)  
 
 ---
